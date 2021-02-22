@@ -1,11 +1,15 @@
-
+body{
+    margin: 0;
+}
 header{
     text-align: center;
     margin: 0;
     padding: 15px;
-    background-color: rgb(233, 230, 230);
- 
-    
+    background-color: rgb(233, 230, 230);   
+    position: fixed;
+    top:0;
+    left: 0; 
+    width: 100%;
 }
 
 nav{
@@ -28,7 +32,11 @@ table{
     border: 1px solid black;
 }
 
-article{
+main{
+    margin-top: 195px;
+}
+
+section{
     text-align: center;
     float: left;
     max-width: 50%;
@@ -37,6 +45,7 @@ article{
 aside{
     margin: 15px;
     text-align: center;
+    padding-top: 16px;
 }
 aside img{
     width: 500px;
