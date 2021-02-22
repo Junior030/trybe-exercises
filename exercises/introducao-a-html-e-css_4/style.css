@@ -1,0 +1,55 @@
+
+header{
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(233, 230, 230);
+ 
+    
+}
+
+nav{
+    margin: 15px;
+    background-color: rgb(233, 230, 230);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+nav a:hover{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table{
+    border: 1px solid black;
+}
+
+article{
+    text-align: center;
+    float: left;
+    max-width: 50%;
+    margin: 15px;
+}
+aside{
+    margin: 15px;
+    text-align: center;
+}
+aside img{
+    width: 500px;
+}
+aside a{
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    clear: both;
+    background-color: rgb(233, 230, 230);
+}
+
