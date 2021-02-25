@@ -1,5 +1,6 @@
 let salario = 3000;
 let INSS = 0, IR = 0;
+const deducao = 142.80;
 
 if (salario <= 1556.94) {
     INSS = INSS - (salario * 0.08);
@@ -10,6 +11,8 @@ if (salario <= 1556.94) {
 } else if (salario > 5189.82) {
     INSS = INSS - 570.88;
 }
+
+salario += INSS;
     
 if (salario <= 1903.98) {
     IR = 0;
@@ -22,5 +25,6 @@ if (salario <= 1903.98) {
 } else if (salario > 4664.68) {
     IR = IR - (salario * 0.275)
 }
-
-console.log(IR);
+IR += deducao;
+salario += IR;
+console.log("R$ " +salario);
