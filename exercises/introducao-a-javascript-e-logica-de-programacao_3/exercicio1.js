@@ -1,7 +1,12 @@
 let n = 5;
-let matriz = ["*****"];
+let asterisco = "*";
+let aux = "";
 
 for (let index = 0; index < n; index++) {
-    console.log(matriz);
-   
+    aux = "";
+    for (let j = 0; j < n; j++) {
+
+        aux += asterisco;
+    }
+    console.log(aux);
 }
