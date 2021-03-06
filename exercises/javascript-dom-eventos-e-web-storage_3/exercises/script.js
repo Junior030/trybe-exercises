@@ -129,3 +129,56 @@ function removeZoomDays(event) {
 zoomDays();
 removeZoomDays();
 
+function customTask(){
+  const tasks = document.querySelector('.my-tasks');
+  const creatTask = document.createElement('span');
+  creatTask.innerHTML = "Cozinhar";
+  creatTask.style.color = "green";
+  tasks.appendChild(creatTask);
+}
+customTask();
+
+function dayTaskOver(){
+  const spanTask = document.querySelector('span');
+  
+  spanTask.addEventListener('click', function(){
+    const days = document.querySelectorAll('.day');
+    for (let index = 0; index < days.length; index++) {      
+      days[index].addEventListener('click', function(){
+        days[index].style.color = 'green';
+      })
+    }
+  })
+}
+dayTaskOver();
+
+function dayTaskOut(){
+  const spanTask = document.querySelector('span');
+  
+  spanTask.addEventListener('click', function(){
+    const days = document.querySelectorAll('.day');
+    for (let index = 0; index < days.length; index++) {      
+      days[index].addEventListener('mouseover', function(){
+        if (days[index].style.color === 'green') {
+          days[index].style.color = '#666';
+        }        
+      })
+    }
+  })
+}
+dayTaskOut();
+
+function appointment(){
+  const buttonInput = document.getElementById('btn-add');
+  buttonInput.addEventListener('click', function(){
+    const inputText = document.getElementById('task-input').value;
+    const taskList = document.querySelector('.task-list');
+    const taskLi = document.createElement('li');
+
+    taskLi.innerHTML = inputText;
+    taskList.appendChild(taskLi);
+  })
+
+}
+
+appointment();
