@@ -9,7 +9,7 @@ body {
     margin: auto;
 }
 
-#header, #section {
+#header, .section {
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 15px;
@@ -21,7 +21,7 @@ body {
     margin-bottom: 15px;
 }
 
-#section {
+.section {
     text-align: start;
     margin-top: 20px;
 }
