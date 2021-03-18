@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <h1>Criando formulário de currículo</h1>
+    <p><em>Primeiro formulário</em></p>
+  </header>
+  <section class="section">
+    <form action="" method="get">
+      <fieldset id="cadastro">
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome: 
+          <input type="text" name="user" id="nome" maxlength="40" required>
+        </label>
+        <label for="Email">E-mail: 
+          <input type="text" name="email" id="Email" maxlength="50" required>
+        </label>
+        <label for="cpf">CPF: (Sem caracteres especias)
+          <input type="text" name="CPF" id="cpf" maxlength="11" required>
+        </label>
+        <label for="end">Logradouro: 
+          <input type="text" name="logradouro" id="end" maxlength="200" required>
+        </label>
+        <label for="cid">Cidade: 
+          <input type="text" name="cidade" id="cid" maxlength="28" required>
+        </label>
+        <label for="estados">Estado: </label><br>
+        <select name="Estados" id="estados" required></select>
+        <br>
+        <span>Moradia: </span>
+        <label for="casa">Casa 
+          <input type="radio" name="moradia" id="casa" maxlength="200" required>
+        </label>
+        <label for="aprt">Apartamento 
+          <input type="radio" name="moradia" id="aprt" maxlength="200" required>
+        </label>
+      </fieldset>
+      <fieldset id="cadastro">
+        <legend>Experiências</legend>
+        <label for="resumo">Resumo do currículo:
+          <textarea name="Resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+        </label>
+        <label for="cargo">Cargo:  
+          <input type="text" name="Cargo" id="cargo" cols="30" rows="10" maxlength="1000" required></input>
+        </label>
+        <label for="descricao">Descrição do cargo:  
+          <input type="text" name="Descricao" id="descricao" cols="30" rows="10" maxlength="500" required></input>
+        </label>
+        <label for="date">Data de início: 
+          <input type="date" name="Data" id="date">
+        </label>
+      </fieldset>
+      <div class="button">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+  <section class="section">
+    
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
