@@ -9,57 +9,58 @@
   <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist (1)/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
 </head>
 <body>
-  <header id="header">
+  <header class="container text-center">
     <h1>Criando formulário de currículo</h1>
     <p><em>Primeiro formulário</em></p>
   </header>
-  <section class="">
+  <section class="container">
     <form action="" method="get">
-      <fieldset>
+      <fieldset class="">
         <legend>Dados Pessoais</legend>
-        <label for="nome">Nome: 
-          <input type="text" name="user" id="nome" maxlength="40" required>
+        <label class="form-label" for="nome">Nome: 
+          <input class="form-control" type="text" name="user" id="nome" maxlength="40" required>
         </label>
-        <label for="Email">E-mail: 
-          <input type="text" name="email" id="Email" maxlength="50" required>
+        <label class="form-label" for="Email">E-mail: 
+          <input class="form-control" type="text" name="email" id="Email" maxlength="50" required>
         </label>
-        <label for="cpf">CPF: (Sem caracteres especias)
-          <input type="text" name="CPF" id="cpf" maxlength="11" required>
+        <label class="form-label" for="cpf">CPF: (Sem caracteres especias)
+          <input class="form-control" type="text" name="CPF" id="cpf" maxlength="11" required>
         </label>
-        <label for="end">Logradouro: 
-          <input type="text" name="logradouro" id="end" maxlength="200" required>
+        <label class="form-label" for="end">Logradouro: 
+          <input class="form-control" type="text" name="logradouro" id="end" maxlength="200" required>
         </label>
-        <label for="cid">Cidade: 
-          <input type="text" name="cidade" id="cid" maxlength="28" required>
+        <label class="form-label" for="cid">Cidade: 
+          <input class="form-control" type="text" name="cidade" id="cid" maxlength="28" required>
         </label>
-        <label for="estados">Estado: </label><br>
-        <select name="Estados" id="estados" required></select>
+        <label class="form-label" for="estados">Estado: </label><br>
+        <select class="form-select form-select-sm" name="Estados" id="estados" required></select>
         <br>
         <span>Moradia: </span>
-        <label for="casa">Casa 
-          <input type="radio" name="moradia" id="casa" maxlength="200" required>
+        <label class="" for="casa">Casa 
+          <input class="" type="radio" name="moradia" id="casa" maxlength="200" required>
         </label>
-        <label for="aprt">Apartamento 
-          <input type="radio" name="moradia" id="aprt" maxlength="200" required>
+        <label class="form-label" for="aprt">Apartamento 
+          <input class="" type="radio" name="moradia" id="aprt" maxlength="200" required>
         </label>
       </fieldset>
       <fieldset>
         <legend>Experiências</legend>
-        <label for="resumo">Resumo do currículo:
-          <textarea name="Resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+        <label class="form-label" for="resumo">Resumo do currículo:
+          <textarea class="form-control" name="Resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
         </label>
-        <label for="cargo">Cargo:  
-          <input type="text" name="Cargo" id="cargo" cols="30" rows="10" maxlength="1000" required></input>
+        <br>
+        <label class="form-label" for="cargo">Cargo:  
+          <input class="form-control" type="text" name="Cargo" id="cargo" cols="30" rows="10" maxlength="1000" required></input>
         </label>
-        <label for="descricao">Descrição do cargo:  
-          <input type="text" name="Descricao" id="descricao" cols="30" rows="10" maxlength="500" required></input>
+        <label class="form-label" for="descricao">Descrição do cargo:  
+          <input class="form-control" type="text" name="Descricao" id="descricao" cols="30" rows="10" maxlength="500" required></input>
         </label>
-        <label for="date">Data de início: 
-          <input type="date" name="Data" id="date">
+        <label class="form-label" for="date">Data de início: 
+          <input class="form-control" type="date" name="Data" id="date">
         </label>
       </fieldset>
-      <div class="">
-        <button type="submit">Enviar</button>
+      <div class="text-center mb-5 p-3">
+        <button class="btn btn-outline-success" type="submit">Enviar</button>
       </div>
     </form>
   </section>
