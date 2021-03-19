@@ -36,8 +36,20 @@ figure {
     h2 {
         text-align: center;
     }
-   figure {
-       width: 35%;
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+   section {
        margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   section figure {
+       margin: 15px;
    }
 }
