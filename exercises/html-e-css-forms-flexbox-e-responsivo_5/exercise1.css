@@ -1,0 +1,56 @@
+body {
+    box-sizing: content-box;
+    background-color: burlywood;
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 20px;
+        margin: 25px;
+    }
+    h1 {
+        font-size: 0.9em;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    figure {
+        margin: 50px 0;
+    }
+}
+
+@media screen and (min-width: 378px){
+    h2 {
+        text-align: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+   section {
+       margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   section figure {
+       margin: 15px;
+   }
+}
