@@ -17,6 +17,41 @@
 
 //   console.log(testingScope(true));
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
+// console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
+
+
+// const fatorial = num => {
+//     let fatoril =num;
+    
+//     if (num > 0) {
+//         for (let index = num-1; index > 0; index -= 1) {
+//             fatoril *= index;
+//         }  
+//     } else {
+//         fatoril = 'Numero negativo ou zero!';
+//     }
+//     return fatoril;
+// }
+
+// console.log(fatorial(0));
+
+// const button = document.querySelector('#button');
+// const div = document.querySelector('#qtd');
+// let num = 0;
+// button.addEventListener('click' , () => {
+//     num += 1;
+//     div.innerHTML = num; 
+// })
+
+// const longestWord = ("Antônio foi no banheiro e não sabemos o que aconteceu");
+// let big = ''; 
+// const palavras = longestWord.split(' ').forEach(word => {
+//     if (word.trim().length > big.length) {
+//         big = word.trim();
+//     }
+// });
+
+
+// console.log(big);
