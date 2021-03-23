@@ -13,6 +13,10 @@
 //   testingScope(true);
 
 
-  const testingScope = (escopo) => (escopo === true) ? ' ótimo, fui utilizada no escopo !': 'Não devo ser utilizada fora meu escopo (else)'; 
+//   const testingScope = (escopo) => (escopo === true) ? ' ótimo, fui utilizada no escopo !': 'Não devo ser utilizada fora meu escopo (else)'; 
 
-  console.log(testingScope(true));
+//   console.log(testingScope(true));
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
