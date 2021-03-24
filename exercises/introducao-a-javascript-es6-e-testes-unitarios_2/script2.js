@@ -69,4 +69,39 @@ const verificacao = (objeto, chave, valor) => {
 
     return verifique;
 };
-  console.log(verificacao(lesson3, 'materia', 'Matemática'));
+//   console.log(verificacao(lesson3, 'materia', 'Matemática'));
+
+
+//   Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+// // Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
+
+function qtdMatematica(allLessons) {
+    let qtd = 0;
+    for (const key in allLessons) {
+        if (allLessons[key].materia === 'Matemática') {
+            qtd += allLessons[key].numeroEstudantes;
+        }
+    }
+    return qtd;
+}
+
+// console.log(qtdMatematica(allLessons));
+
+
+function relatorioTeacher(object, valor) {
+    const relatorio = {
+        professor: 0,
+        aulas: [],
+        estudantes: 0,
+    };
+    for (const key in object) {
+        if (object[key].professor === valor){
+            relatorio.professor = object[key].professor;
+            relatorio.aulas.push(object[key].materia);
+            relatorio.estudantes += object[key].numeroEstudantes; 
+        }
+    }
+    return relatorio;
+}
+
+console.log(relatorioTeacher(allLessons, 'Maria Clara'));
