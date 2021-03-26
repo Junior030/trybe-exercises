@@ -166,25 +166,98 @@ const assert = require('assert');
 // (4)
 
 // escreva a função findTheNeedle aqui
-const findTheNeedle = (array, string) => {
-    let test = - 1;
-    for (let index = 0; index < array.length; index++) {
-        if (string == array[index]) test = index; 
-    }
-    return test;
+// const findTheNeedle = (array, string) => {
+//     let test = - 1;
+//     for (let index = 0; index < array.length; index++) {
+//         if (string == array[index]) test = index; 
+//     }
+//     return test;
+// };
+
+// let words = ['house', 'train', 'slide', 'needle', 'book'];
+// let expected = 3;
+// let output = findTheNeedle(words, 'needle');
+// assert.strictEqual(output, expected);
+
+// words = ['plant', 'shelf', 'arrow', 'bird'];
+// expected = 0;
+// output = findTheNeedle(words, 'plant');
+// assert.strictEqual(output, expected);
+
+// words = ['plant', 'shelf', 'arrow', 'bird'];
+// expected = -1;
+// output = findTheNeedle(words, 'plat');
+// assert.strictEqual(output, expected);
+
+// const greetPeople = (people) => {
+//     let greeting = [];
+//     let ola = 'Hello ';
+  
+//     for (const person in people) {
+//       greeting[person] = ola + people[person];
+//     }
+//     return greeting;
+//   };
+  
+//   const parameter = ['Irina', 'Ashleigh', 'Elsa'];
+//   const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
+
+//   assert.deepStrictEqual(greetPeople(parameter), result);
+
+// const removeVowels = (word) => {
+//     const characters = word.split('');
+//     const results = [];
+//     let x = 1;
+//     for (let index = 0; index < characters.length; index += 1) {
+//       if (
+//         characters[index] === 'a' ||
+//         characters[index] === 'o' ||
+//         characters[index] === 'i' ||
+//         characters[index] === 'e' ||
+//         characters[index] === 'u'
+//       ) {
+//         results.push(x);
+//         x++;
+//     } else {
+//         results.push(characters[index]);
+//       }
+//     }
+//     return results.join('');
+//   };
+  
+  
+//   const parameter = 'Dayane';
+//   const result = 'D1y2n3';
+  
+//   assert.strictEqual(removeVowels(parameter), result);
+
+
+// const greaterThanTen = (array) => {
+//     let results = [];
+//     for (let index = 0; index < array.length; index += 1) {
+//       if (array[index] > 10) {
+//         results.push(array[index]);
+//       }
+//     }
+//     return results;
+//   };
+  
+//   const parameter = [4, 10, 32, 9, 21];
+//   const result = [32, 21];
+
+//   assert.deepStrictEqual(greaterThanTen(parameter), result);
+
+
+function secondThirdSmallest(array) {
+    let results = []
+    array.sort(function (x, y) {
+        return x - y;
+    });
+    results = [array[1], array[2]];
+    return results;
 };
 
-let words = ['house', 'train', 'slide', 'needle', 'book'];
-let expected = 3;
-let output = findTheNeedle(words, 'needle');
-assert.strictEqual(output, expected);
+const parameter = [4, 10, 32, 9, 21, 90, 5, 11, 8, 6];
+const result = [5, 6];
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = 0;
-output = findTheNeedle(words, 'plant');
-assert.strictEqual(output, expected);
-
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = -1;
-output = findTheNeedle(words, 'plat');
-assert.strictEqual(output, expected);
+assert.deepStrictEqual(secondThirdSmallest(parameter), result);
