@@ -58,7 +58,7 @@ const order = {
 
     const total = order.order.pizza.muzzarella.price + order.order.pizza.calabresa.price + order.order.drinks.coke.price;
 
-    console.log(`Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)} e ${order.order.drinks.coke.type} é R$ ${total}`);
+    console.log(`Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)[0]}, ${Object.keys(order.order.pizza)[1]} e ${order.order.drinks.coke.type} é R$ ${total}`);
     
   }
   
