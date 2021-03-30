@@ -63,15 +63,16 @@ const books = [
   },
 ];
 
-const expectedResult = false;
+const expectedResult = true;
 
-function everyoneWasBornOnSecXX() {
- books.every(array => {
-      if(array.birthYear > 1901 && array.birthYear < 2001) {
-          expectedResult.valueOf = true;
-      }
-  })
-  return expectedResult;
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  books.some(array => {
+    if(array.birthYear > 1979 && array.birthYear < 1990) {
+        expectedResult.valueOf = true;
+    }
+})
+return expectedResult;
 }
 
-assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
+assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
