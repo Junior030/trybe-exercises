@@ -1,6 +1,6 @@
 const promises = new Promise((resolved, reject) => {
     const array = [];
-    for (let index = array.length + 1; index <= 50; index += 1) {
+    for (let index = array.length + 1; index <= 10; index += 1) {
         array.push(Math.pow(index, 2));            
     }
     const some = array.reduce((a,b)=>a+b, 0); 
