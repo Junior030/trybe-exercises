@@ -47,7 +47,7 @@ class App extends Component {
           {characters.map(({ name, species, image, location: url }) => {
             return (
               <div className="container" key={name}>
-                <h3>{name}</h3>
+                <h3>Name: {name}</h3>
                 <h4>Species: {species}</h4>
                 <img src={image} alt={name}/>
                 <a href={url}>Lacation</a>
