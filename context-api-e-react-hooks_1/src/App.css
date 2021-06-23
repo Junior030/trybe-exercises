@@ -9,6 +9,8 @@ a {
 	padding: 20px;
 	margin: 20px;
 	border: 1px solid black;
+	width: 100px;
+	text-align: center;
 }
 
 .App {
@@ -27,4 +29,10 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.loginContainer a {
+	border: none;
+	padding: 0px;
+	margin: 0px;
 }
