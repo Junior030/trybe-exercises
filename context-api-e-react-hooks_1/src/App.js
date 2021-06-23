@@ -5,17 +5,14 @@ import Cadastro from './pages/Cadastro';
 import Login from './pages/Login';
 import './App.css';
 import Conteudo from './pages/Conteudo';
-import MyContext from './components/MyContext';
+import MyProvider from './context/MyProvider';
 import Cadastrados from './pages/Cadastrados';
 
 
 function App() {
-  const contexValue = {
-    BDcadastro: [{nome: 'Junior', email: 'juniorhenrique030@gmail.com', senha: '123456' }],
-  }
   return (
     <div className="App">
-      <MyContext.Provider value={ contexValue }>
+      <MyProvider>
         <Router>
           <Switch>
             <Route exact path='/' component={Home} />
@@ -25,7 +22,7 @@ function App() {
             <Route path='/cadastrados' component={Cadastrados} />
           </Switch>
         </Router>
-      </MyContext.Provider>
+      </MyProvider>
     </div>
   );
 }

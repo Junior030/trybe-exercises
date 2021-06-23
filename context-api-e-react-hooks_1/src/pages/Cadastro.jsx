@@ -1,30 +1,39 @@
-import { Component } from 'react';
-import MyContext from '../components/MyContext';
+import React, { useContext } from 'react';
+import MyContext from '../context/MyContext';
 
-class Cadastro extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {}
-	}
-	render() {
-		return (
+
+function Cadastro () {
+	const { addUsuario } = useContext(MyContext);
+	return (
 		<div className="cadastroContainer">
 			<form>
 				<label htmlFor="nome">
 					Nome:
-					<input type="text" id="nome" />
+					<input
+						type="text"
+						id="nome" 
+						onChange={ ({ target }) => addUsuario({[target.id]: target.value}) }
+					/>
 				</label>
 				<label htmlFor="email">
 					Email:
-					<input type="email" id="email" />
+					<input
+						type="email"
+						id="email"
+						onChange={ ({ target }) => addUsuario({[target.id]: target.value}) }
+					/>
 				</label>
 				<label htmlFor="senha">
 					Senha: 
-					<input type="password" id="senha" />
+					<input
+						type="password"
+						onChange={ ({ target }) => addUsuario({[target.id]: target.value}) }
+						id="senha"
+					/>
 				</label>
 			</form>
-		</div>);
-	}
+		</div>
+	);
 }
 
 export default Cadastro;

@@ -1,24 +1,25 @@
 import React from 'react';
-import MyContext from '../components/MyContext';
+// import MyContext from '../context/MyContext';
 
-class Cadastrados extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
-  render() { 
-    return (
-      <div className="cadastradosContainer">
-          <MyContext.Consumer>
-            {
-              value => {
-                console.log(value);
-              }
-            }
-          </MyContext.Consumer>
-      </div>
-    );
-  }
+function Cadastrados () {
+  return (
+    <div className="cadastradosContainer">
+        {/* <MyContext.Consumer>
+          {
+            value => (
+              value.BDcadastro.map((pessoa, index) => {
+                return (
+                  <div key={index}>
+                    <p>{pessoa.nome}</p>
+                    <p>{pessoa.email}</p>
+                  </div>
+                );
+              })
+            )
+          }
+        </MyContext.Consumer> */}
+    </div>
+  );
 }
  
 export default Cadastrados;
