@@ -12,7 +12,7 @@ function Cadastro () {
 					<input
 						type="text"
 						id="nome" 
-						onChange={ ({ target }) => addUsuario({[target.id]: target.value}) }
+						onChange={ addUsuario }
 					/>
 				</label>
 				<label htmlFor="email">
@@ -20,14 +20,14 @@ function Cadastro () {
 					<input
 						type="email"
 						id="email"
-						onChange={ ({ target }) => addUsuario({[target.id]: target.value}) }
+						onChange={ addUsuario }
 					/>
 				</label>
 				<label htmlFor="senha">
 					Senha: 
 					<input
 						type="password"
-						onChange={ ({ target }) => addUsuario({[target.id]: target.value}) }
+						onChange={ addUsuario }
 						id="senha"
 					/>
 				</label>
